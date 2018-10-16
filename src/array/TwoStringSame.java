@@ -11,8 +11,11 @@ public class TwoStringSame {
      * @return
      */
     public static boolean isTwooStringSame(String str){
+        if (str == null){
+            return false;
+        }
 
-        return true;
+        return false;
     }
 
     public static void main(String[] args) {
