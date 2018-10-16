@@ -5,6 +5,11 @@ package array;
 
 public class TwoStringSame {
 
+    /**
+     * 判断方法
+     * @param str
+     * @return
+     */
     public static boolean isTwooStringSame(String str){
 
         return true;
