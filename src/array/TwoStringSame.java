@@ -4,4 +4,8 @@
 package array;
 
 public class TwoStringSame {
+
+    public static void main(String[] args) {
+
+    }
 }
