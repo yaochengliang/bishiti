@@ -39,7 +39,7 @@ public class TwoStringSame {
     }
 
     /**
-     * 统计每个字符的出现次数，查看是否相等
+     * 统计每个字符的出现次数，假设字符是ASCII码
       * @param str1
      * @param str2
      * @return
@@ -57,10 +57,24 @@ public class TwoStringSame {
             return false;
         }
 
+        int[] letters = new int[256];//其实有点浪费空间
+
+        char[] str1Char = str1.toCharArray();
+        for (char c:str1Char) {
+            letters[(int)c] ++;
+        }
+
+        char[] str2Char = str2.toCharArray();
+        for (char c: str2Char) {
+            if (--letters[c] < 0){
+                return false;
+            }
+        }
+
         return true;
     }
 
     public static void main(String[] args) {
-        System.out.println(isTwooStringSame("hello world","world hello"));
+        System.out.println(isTwooStringSame2("hello world","world hello"));
     }
 }
