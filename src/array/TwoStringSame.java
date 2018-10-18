@@ -44,29 +44,29 @@ public class TwoStringSame {
      * @param str2
      * @return
      */
-    public static boolean isTwooStringSame2(String str1,String str2){
-        if (null == str1 && null == str2){
+    public static boolean isTwooStringSame2(String str1,String str2) {
+        if (null == str1 && null == str2) {
             return true;
         }
 
-        if ("" == str1 && "" == str2){
+        if ("" == str1 && "" == str2) {
             return true;
         }
 
-        if (str1.length() != str2.length()){
+        if (str1.length() != str2.length()) {
             return false;
         }
 
         int[] letters = new int[256];//其实有点浪费空间
 
         char[] str1Char = str1.toCharArray();
-        for (char c:str1Char) {
-            letters[(int)c] ++;
+        for (char c : str1Char) {
+            letters[(int) c]++;
         }
 
         char[] str2Char = str2.toCharArray();
-        for (char c: str2Char) {
-            if (--letters[c] < 0){
+        for (char c : str2Char) {
+            if (--letters[c] < 0) {
                 return false;
             }
         }
