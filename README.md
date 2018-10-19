@@ -11,4 +11,6 @@ array
     
     CompactString：字符串压缩
     
+    ChangeZeroInMatrix：将NxN数组中0元素所在行和列的元素全部设为0
+    
     
