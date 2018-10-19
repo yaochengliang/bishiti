@@ -9,3 +9,6 @@ array
     
     StringReplace：将字符串中的某个字符全部替换；
     
+    CompactString：字符串压缩
+    
+    
