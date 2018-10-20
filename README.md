@@ -13,4 +13,6 @@ array
     
     ChangeZeroInMatrix：将NxN数组中0元素所在行和列的元素全部设为0
     
-    
+sort(排序)
+
+    BInsertA：将排好序的B插入排好序的A中，假设A后面有足够的空间位置容纳B
