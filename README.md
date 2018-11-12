@@ -12,6 +12,12 @@ array
     CompactString：字符串压缩
     
     ChangeZeroInMatrix：将NxN数组中0元素所在行和列的元素全部设为0
+
+linedlist
+
+    DeleteDuplicateNodes：创建链表，添加节点到尾部
+    
+    DeleteDupliateNodes：删除链表中的重复节点
     
 sort(排序)
 
